@@ -340,7 +340,7 @@ onMounted(() => {
 
 /* 基础文字样式 */
 .green-text {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin: 0 auto;
   /* 移除上下边距，因为容器已有内边距 */
@@ -403,7 +403,7 @@ onMounted(() => {
 
 
 .placeholder-text {
-  height: 18px;
+  height: 14px;
   /* 与文字高度一致 */
 }
 
