@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import { ref, onMounted } from 'vue'
 import Footer from './components/Footer.vue'
 // 为每个图片创建独立的悬停状态
@@ -291,8 +290,6 @@ onMounted(() => {
     </div>
 
   </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
-
   <Footer />
 </template>
 
