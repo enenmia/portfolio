@@ -448,7 +448,7 @@ onMounted(() => {
   background-repeat: no-repeat;
   z-index: -1;
   transition: filter 0.5s ease;
-  filter: grayscale(20%) brightness(0.9) contrast(1.1);
+  filter: grayscale(40%) brightness(0.9) contrast(1.1);
 }
 
 .bold {
