@@ -48,7 +48,7 @@
   justify-content: center;
   color: black;
   /* 可自定义文字颜色 */
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 300;
   margin: 0;
   padding: 0;

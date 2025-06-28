@@ -335,7 +335,7 @@ onMounted(() => {
   margin: 0px;
   z-index: 10;
   /* 确保图片容器层级正确 */
-  border: grey solid 1px;
+  border: grey solid 0.5px;
 }
 
 /* 基础文字样式 */
