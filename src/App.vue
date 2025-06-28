@@ -415,7 +415,7 @@ onMounted(() => {
   position: relative;
   z-index: 1;
   flex-direction: column;
-  padding: 4rem;
+  /* padding: 4rem; */
 
 }
 
