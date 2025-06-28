@@ -297,8 +297,8 @@ onMounted(() => {
 
 <style scoped>
 .logo {
-  height: 3em;
-  padding: 3em;
+  height: 2.8em;
+  padding: 2.8em;
   will-change: filter;
   /* transition: filter 300ms, transform 300ms; */
   transition: filter 600ms ease, transform 600ms ease;
