@@ -297,8 +297,8 @@ onMounted(() => {
 
 <style scoped>
 .logo {
-  height: 2.8em;
-  padding: 2.8em;
+  height: 2.6em;
+  padding: 2.6em;
   will-change: filter;
   /* transition: filter 300ms, transform 300ms; */
   transition: filter 600ms ease, transform 600ms ease;
@@ -448,7 +448,7 @@ onMounted(() => {
   background-repeat: no-repeat;
   z-index: -1;
   transition: filter 0.5s ease;
-  filter: grayscale(50%) brightness(0.9) contrast(1.1);
+  filter: grayscale(20%) brightness(0.9) contrast(1.1);
 }
 
 .bold {

@@ -26,7 +26,7 @@
 <style scoped>
 .footer-outer {
   position: relative;
-  height: 600px;
+  height: 800px;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
   margin: 0;
   padding: 0;
@@ -39,7 +39,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 600px;
+  height: 800px;
   width: 100%;
   background-color: #f8f4f4;
   /* 可自定义颜色或渐变 */
