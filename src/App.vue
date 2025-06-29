@@ -31,8 +31,8 @@ onMounted(() => {
       <h2 class="title">Can people’s experience in the virtual world influence their self-evaluations in reality?</h2>
       <p class="thin"><span class="bold">#</span>Research <span class="bold">#</span>Course: Research Fundamentals</p>
       <p class="thin">[2023 September]</p>
-      In course Research Fundamentals, I researched the if vitual experience can influence people's self-evalutaion. The
-      answer is yes, it can influence, but in a limited way. It also covers the factors that determines the effects.
+      In course Research Fundamentals, I researched about if vitual experience can influence people's self-evalutaion. The
+      answer is yes, it can influence, but in a limited way. It also covers the factors that determine the effects.
       <br><br>Interestingly, I didn’t realize it at the time, but my Master thesis ended up revolving around the very
       same
       theme. Looking back, it feels like a beautiful full-circle moment that quietly connected the beginning and the end
