@@ -185,7 +185,7 @@ onMounted(() => {
     <div class="image-scroller">
       <div class="image-track">
         <div class="image-container gray-image">
-          <a href="public/7papers-FinalVer.pdf" target="_blank">
+          <a href="/7papers-FinalVer.pdf" target="_blank">
             <img src="/image-7paper.png" class="logo gray" alt="7paper"
               @mouseenter="hover7paperImage = true; isBackgroundGrayscale = true"
               @mouseleave="hover7paperImage = false; isBackgroundGrayscale = false" />
