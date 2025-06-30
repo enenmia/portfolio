@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import Footer from './components/Footer.vue'
+import Header from './components/Header.vue'
 // 为每个图片创建独立的悬停状态
 const hoverFirstImage = ref(false)
 const hoverSecondImage = ref(false)
@@ -24,6 +25,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <Header />
   <!-- 背景图 -->
   <div class="background" :class="{ 'grayscale': isBackgroundGrayscale }"></div>
   <div class="text-container" :class="{ 'dark-bg': isBackgroundGrayscale }">
@@ -31,7 +33,8 @@ onMounted(() => {
       <h2 class="title">Can people’s experience in the virtual world influence their self-evaluations in reality?</h2>
       <p class="thin"><span class="bold">#</span>Research <span class="bold">#</span>Course: Research Fundamentals</p>
       <p class="thin">[2023 September]</p>
-      In course Research Fundamentals, I researched about if vitual experience can influence people's self-evalutaion. The
+      In course Research Fundamentals, I researched about if vitual experience can influence people's self-evalutaion.
+      The
       answer is yes, it can influence, but in a limited way. It also covers the factors that determine the effects.
       <br><br>Interestingly, I didn’t realize it at the time, but my Master thesis ended up revolving around the very
       same
@@ -192,12 +195,11 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container gray-image">
-          <!-- <a href="https://vite.dev" target="_blank"> -->
-          <img src="/snakegame.jpg" class="logo vue" alt="snakegame"
-            @mouseenter="hoverSnakeImage = true; isBackgroundGrayscale = true"
-            @mouseleave="hoverSnakeImage = false; isBackgroundGrayscale = false" />
-
-          <!-- </a> -->
+          <a href="/Video.mp4" target="_blank">
+            <img src="/snakegame.jpg" class="logo vue" alt="snakegame"
+              @mouseenter="hoverSnakeImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverSnakeImage = false; isBackgroundGrayscale = false" />
+          </a>
         </div>
         <div class="image-container gray-image">
           <a href="https://github.com/enenmia/characterLearning" target="_blank">
@@ -221,11 +223,11 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container">
-          <!-- <a href="https://vite.dev" target="_blank"> -->
-          <img src="/ssi.png" class="logo" alt="Vite logo"
-            @mouseenter="hoverSSIImage = true; isBackgroundGrayscale = true"
-            @mouseleave="hoverSSIImage = false; isBackgroundGrayscale = false" />
-          <!-- </a> -->
+          <a href="/ssi_demo.mp4" target="_blank">
+            <img src="/ssi.png" class="logo" alt="Vite logo"
+              @mouseenter="hoverSSIImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverSSIImage = false; isBackgroundGrayscale = false" />
+          </a>
         </div>
         <div class="image-container">
           <a href="https://github.com/enenmia/fakeLinkedIn" target="_blank">
@@ -272,18 +274,18 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container">
-          <!-- <a href="https://vuejs.org/" target="_blank"> -->
-          <img src="/e-keyboard.png" class="logo" alt="Vue logo"
-            @mouseenter="hoverEkeyboardImage = true; isBackgroundGrayscale = true"
-            @mouseleave="hoverEkeyboardImage = false; isBackgroundGrayscale = false" />
-          <!-- </a> -->
+          <a href="/Placeholder.pdf" target="_blank">
+            <img src="/e-keyboard.png" class="logo" alt="Vue logo"
+              @mouseenter="hoverEkeyboardImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverEkeyboardImage = false; isBackgroundGrayscale = false" />
+          </a>
         </div>
         <div class="image-container">
-          <!-- <a href="https://vuejs.org/" target="_blank"> -->
-          <img src="/thesis.png" class="logo gray" alt="Vue logo"
-            @mouseenter="hoverThesisImage = true; isBackgroundGrayscale = true"
-            @mouseleave="hoverThesisImage = false; isBackgroundGrayscale = false" />
-          <!-- </a> -->
+          <a href="/Placeholder.pdf" target="_blank">
+            <img src="/thesis.png" class="logo gray" alt="Vue logo"
+              @mouseenter="hoverThesisImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverThesisImage = false; isBackgroundGrayscale = false" />
+          </a>
         </div>
       </div>
 
@@ -391,7 +393,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 300px;
   width: 100%;
   padding: 1em;
   /* 添加内边距 */
