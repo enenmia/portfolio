@@ -46,7 +46,11 @@ onMounted(() => {
       <p class="thin"><span class="bold">#</span>Arduino & Python <span class="bold">#</span>Course: Hardware & Physical
         Computing</p>
       <p class="thin">[2023 September, with Amber & Josie & Tijmen]</p>
-      The calmer you are, the slower the snake moves.
+      A snake game was created where the speed of the snake was dependent on the heart rate. This creates a game which
+      gets more challenging dependent on excitement and stress. The idea was for one person to play the snake game,
+      while a second person wore the heart rate monitor and to answer quiz questions. They then had to keep calm in
+      order for the game to be as easy as possible for the first player.<br><br>
+      In short, the calmer you are, the slower the snake moves.
     </div>
     <div v-if="hoverHCIImage" class="green-text lightgray-text">
       <h2 class="title">Symnese</h2>
@@ -54,23 +58,74 @@ onMounted(() => {
           class="bold">#</span>Course: Human Computer
         Interaction & Information Visualisation</p>
       <p class="thin">[2023 December]</p>
-      Create your own Chinese character.
+      Creating your own Chinese character can help you remember the way it actually looks!<br><br>
+      As the traditional methods (repeating and deconstructing) of character learning
+      both have unignorable drawbacks such as lack of fun or not intuitive enough, we
+      aim to improve the memorizing issue of character. Transitioning from rote character memorization to diverse
+      memorization strategies reveals another way out.<br><br>
+      This technique, common in recall, is rarely applied in character memorization.
+      The method is called integrate subjectivity into memorizing process[8]. To
+      specify the term, integrating subjectivity can be understood as finding personal
+      connections between language learners and the language. This technique suggests
+      that stressing the learner’s own ideas could add benefit to their learning journey.
+      With this in mind, we decide to integrate subjectivity in the learning process
+      with Symnese.<br><br>
+      In order to provide a possible solution to this problem, Symnese, a webbased character learning tool, was created.
+      It aimed to discover whether people
+      can learn characters more efficiently when trying to figure out the symbolic
+      relationship between character and the real counterpart they represent. This is
+      done using a two phase process. In phase one, the user gets to create their own
+      character using the real Chinese components. Whereas in the second phase they
+      evaluate on this process.
     </div>
     <div v-if="hoverCCImage" class="green-text lightgray-text">
       <h2 class="title">Feel your hair</h2>
       <p class="thin"><span class="bold">#</span>Processing <span class="bold">#</span>Course: Creative Programming</p>
       <p class="thin">[2024 January]</p>
       Interactive program that intends to change the way we interact with our body hair, turning the often awkward
-      conversation about body hair into a playful and artistic experience.
+      conversation about body hair into a playful and artistic experience.I set out to create a tool that changes how we
+      interact with body hair, turning the often awkward conversation about body hair into a playful and artistic
+      experience. With four modes - Pat, Care, Trim, and Dye - users can engage with virtual hair in different ways.
+      <br><br>
+      Pat Mode:
+      In this mode, users interact with their hair using their hands in front of the webcam. The video detects hand
+      movements, and the virtual hair reacts as if it's being gently touched. This mode is designed to mimic the
+      comforting feeling of running fingers through hair, with each stroke making the hair to sway and move softly.
+      <br><br>
+      Care Mode:
+      Here, the interaction shifts to the use of the mouse. Users can care for their hair by clicking and dragging the
+      mouse over the hair, after which the hair will have less splits in its end. This mode resembles the effect of
+      applying oil or conditioner.
+      <br><br>
+      Trim Mode:
+      Trim Mode brings the feeling of cutting and grooming. Users use their hand movements, captured through the webcam,
+      to simulate trimming the hair. When the hair is touched by hand, it drops as if being cut.
+      <br><br>
+      Dye Mode:
+      Dye Mode is a playful exploration of color. Users select a dye color by holding a colored object close to the
+      webcam. The tool then captures this color. As the user moves the mouse over the hair, it changes to the selected
+      color, mimicking the process of dyeing hair.
     </div>
     <div v-if="hoverFirstImage" class="green-text lightgray-text">
       <h2 class="title">MUSHI</h2>
       <p class="thin"><span class="bold">#</span>Arduino & Python <span class="bold">#</span>Course: Artificial
         Creatures</p>
       <p class="thin">[2024 April, with Carita]</p>
+      We have created an artificial creature called Mushi that explores the notions of toxicity.<br><br>
+
+      We started out with the idea of power relations and feminism for our project, in essence, we wanted to explore
+      this quality in humans, how power structures are formed. As we delved further into the research, we noticed
+      patterns of toxic behavior as a recurring theme. This took us to explore this as a type of power structure.
+      How toxic behavior presents itself, such as through narcissism and manipulation.<br><br>
+
+      We thought of a creature that could embody this characteristic, where you're not able to distinguish this quality
+      from the outside but it comes across as you get to know it better. This is where we arrived at the mushroom.<br><br>
+
       A mushroom is a fungi that grows above ground, it comes in a variety of sizes, shapes and colors. Some of them are
-      consumable and some are poisonous for humans, the distinction is hard for humans to make. <br><br> In this
-      immersive installation, we invite you to position yourself in a direct, intimate communication with our creature—a
+      consumable and some are poisonous for humans, the distinction is hard for humans to make. In this relation, we
+      thought the mushroom would be a great allegory for toxic characteristics and personality found in humans.
+
+      <br><br> In this immersive installation, we invite you to position yourself in a direct, intimate communication with our creature—a
       dialogue that at first glance seems inviting and warm. Yet, as you unravel the layers of this metaphorical
       journey, its true nature is revealed.
     </div>

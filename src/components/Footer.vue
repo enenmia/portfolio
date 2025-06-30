@@ -7,10 +7,25 @@
           <i class="pi pi-linkedin" style="color: grey"></i>
           <i class="pi pi-github" style="color: grey"></i>
         </div> -->
+        <p :class="{ typing: isTypingActive }" ref="typingRef">Be playful.</p>
         <p>© 2025 Huien Tan 谭惠恩</p>
+        <div class="flex">
+          <div class="flex">
+            <i class="pi pi-map-marker"></i>
+            <p>Guangzhou & Amsterdam</p>
+          </div>
+          <a href="https://www.linkedin.com/in/huien-tan/" class="flex" target="_blank">
+            <i class="pi pi-linkedin"></i>
+            <p>LinkedIn</p>
+          </a>
+          <a href="https://github.com/enenmia" class="flex" target="_blank">
+            <i class="pi pi-github"></i>
+            <p>Github</p>
+          </a>
+        </div>
 
         <!-- <p class="typing">Be playful.</p> -->
-        <p :class="{ typing: isTypingActive }" ref="typingRef">Be playful.</p>
+
         <!-- <p ref="typingRef">
           <span v-if="isTypingActive" class="typing">Be playful.</span>
         </p> -->
@@ -24,6 +39,13 @@
 </template>
 
 <style scoped>
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
 .footer-outer {
   position: relative;
   height: 800px;
