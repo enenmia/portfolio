@@ -31,7 +31,7 @@ template {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: rgba(255, 255, 255, 0.2);
     /* Translucent white */
     backdrop-filter: blur(5px);
@@ -61,7 +61,7 @@ template {
     font-family: "Montserrat", sans-serif;
     color: #9eafab;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0;
     transition: color 0.3s ease;
 }

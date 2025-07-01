@@ -461,8 +461,8 @@ onMounted(() => {
 
 <style scoped>
 .logo {
-  height: 2.6em;
-  padding: 2.6em;
+  height: 2.2em;
+  padding: 2.2em;
   will-change: filter;
   /* transition: filter 300ms, transform 300ms; */
   transition: filter 600ms ease, transform 600ms ease;
@@ -555,7 +555,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 290px;
   width: 100%;
   padding: 1em;
   /* 添加内边距 */
@@ -579,7 +579,7 @@ onMounted(() => {
   position: relative;
   z-index: 1;
   flex-direction: column;
-  margin-top:-70px;
+  margin-top:-50px;
   /* padding: 4rem; */
 
 }
