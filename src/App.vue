@@ -442,7 +442,7 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container">
-          <a href="/Placeholder.pdf" target="_blank">
+          <a href="/PlaceholderEkeyboard.pdf" target="_blank">
             <img src="/e-keyboard.png" class="logo" alt="Vue logo"
               @mouseenter="hoverEkeyboardImage = true; isBackgroundGrayscale = true"
               @mouseleave="hoverEkeyboardImage = false; isBackgroundGrayscale = false" />
