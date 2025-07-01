@@ -15,6 +15,8 @@ const hoverSignwebImage = ref(false)
 const hoverEkeyboardImage = ref(false)
 const hoverDataImage = ref(false)
 const hoverGameImage = ref(false)
+const hoverFingerPaperImage = ref(false)
+const hoverCoconutImage = ref(false)
 // 控制背景图是否为黑白
 const isBackgroundGrayscale = ref(false)
 
@@ -119,13 +121,15 @@ onMounted(() => {
       How toxic behavior presents itself, such as through narcissism and manipulation.<br><br>
 
       We thought of a creature that could embody this characteristic, where you're not able to distinguish this quality
-      from the outside but it comes across as you get to know it better. This is where we arrived at the mushroom.<br><br>
+      from the outside but it comes across as you get to know it better. This is where we arrived at the
+      mushroom.<br><br>
 
       A mushroom is a fungi that grows above ground, it comes in a variety of sizes, shapes and colors. Some of them are
       consumable and some are poisonous for humans, the distinction is hard for humans to make. In this relation, we
       thought the mushroom would be a great allegory for toxic characteristics and personality found in humans.
 
-      <br><br> In this immersive installation, we invite you to position yourself in a direct, intimate communication with our creature—a
+      <br><br> In this immersive installation, we invite you to position yourself in a direct, intimate communication
+      with our creature—a
       dialogue that at first glance seems inviting and warm. Yet, as you unravel the layers of this metaphorical
       journey, its true nature is revealed.
     </div>
@@ -134,9 +138,63 @@ onMounted(() => {
       <p class="thin"><span class="bold">#</span>Plug Data <span class="bold">#</span>Course: Sound Space & Interaction
       </p>
       <p class="thin">[2024 April]</p>
-      Developed using Plug Data, purifier allows users to push a star button to clear away noise. The message behind
-      this project is that everyone has the ability to filter out external opinions and keep a small, pure space in
-      their heart.
+      The project is called ‘Purifier’. It aims to convey the audience that everyone is able to purify their own space.
+      The concept is to develop a tool that makes the audience realise the power they naturally carry to expel the noise
+      and guard their peaceful inner place. It uses a sample of people talking to represent external voices (opinions ,
+      discussions,...); uses the sound of birds to represent the pure inner land; the bubbling magical sound to present
+      the purifying process; and designed an interaction via which participants can feel the strength of themselves.
+      <br><br>
+      This project was implemented in several key stages. I first developed the purifying sound effect, inspired by the
+      image of a fairy performing magic. To capture that feeling, I designed a bubbling sound with slight randomness to
+      make the experience more organic and immersive. Next, I built an Arduino setup to capture pressure data, allowing
+      the pitch of the purifying sound to respond dynamically—the greater the pressure, the higher the pitch. I then
+      implemented a logic system where each attempt records the highest pitch reached. If it surpasses the previous
+      record, the system updates the 'max' value and lowers the background noise volume accordingly—so the more effort
+      put into purifying, the quieter the noise becomes.
+      <br><br>
+      To add a sense of resistance, I designed the noise to return if the purification isn’t completed—it gradually gets
+      louder again, mimicking how inner peace often takes repeated effort. Only when the noise volume drops below 0.05
+      does it stop entirely, triggering bird sounds to mark a successful purification. The interaction method went
+      through multiple iterations: I started by trying to sonify breath using chest or stomach movements, but found it
+      too inconsistent across users. I then moved to voice input using `adc~` and `env~`, allowing users to blow into
+      the mic to control the sound, but it only worked well in very quiet environments. Finally, I settled on using hand
+      pressure via a sensor, which gave the most stable and responsive interaction.
+
+    </div>
+    <div v-if="hoverFingerPaperImage" class="green-text">
+      <h2 class="title">How well can fingers remember?
+      </h2>
+      <p class="thin"><span class="bold">#</span>Research <span class="bold">#</span>Course: Playful & Creative Science
+      </p>
+      <p class="thin">[2025 July, with Josie]</p>
+      Repeatedly writing down things help us remember [1]. Knowing that from the
+      research of previous scholars, we are still curious about how exactly different finger
+      participate in this process. In other words, we have the research question:
+      Do fingers help in the write-to-remember process? Can they conduct the act of
+      “remembering” by themselves? What can they remember?<br><br>
+      In order to investigate in these questions, we decide to hold every finger that is active
+      in writing(thumb, index finger, middle finger) as a pen, and try to recreate a picture
+      that has been generated by computer. The experiment shows that each finger has
+      different task that it is good at or bad at.<br><br>
+      Thumbs: Thumbs tend to follow a specific order when memorizing, such as left-to-
+      right or top-to-bottom, which helps to maintain consistency in memory; During
+      reduction, the thumb shows consistency in order, but sometimes makes errors in the
+      position and orientation of elements, such as inaccurate position or orientation of lines
+      and letters.<br><br>
+      Index Finger: The index finger is memorized in a variety of ways, from left to right or
+      according to the importance of the element. Memorization seems to focus more on the
+      details of the elements than on the overall layout; When reducing, the index finger
+      shows attention to detail, but sometimes at the expense of relative positional
+      relationships between elements, resulting in deviations from the overall layout.<br><br>
+      Middle Finger: The middle finger appears to use a subregional approach when
+      memorizing, such as dividing the image into upper, middle, and lower parts to
+      memorize; When reduced, the performance of the middle finger usually includes
+      elemental accuracy, but sometimes errors in size and position occur, especially in
+      maintaining the correct relative position between elements.
+      <p class="thin not-italic">
+        [1]Naka, M., & Naoi, H. (1995). The effect of repeated writing on memory. Memory &
+        cognition, 23(2), 201–212. https://doi.org/10.3758/bf03197222
+      </p>
     </div>
     <div v-if="hoverFingerImage" class="green-text lightgray-text">
       <h2 class="title">FingedIn</h2>
@@ -170,8 +228,10 @@ onMounted(() => {
       The game tells the story of a little girl holding a pearl, searching for the moon—a metaphor for scientists
       seeking
       truth through theory. Along her journey, she meets four prophets, each representing a different historical view of
-      science (from objectivism to subjectivism). I’m especially happy with the romantic ending I crafted for this
-      little exploration game.
+      science (from objectivism to subjectivism).<br> <br> I’m especially happy with the romantic ending I crafted for
+      this
+      little exploration game. It represents how scientists pass knowledge to the next generations and how the fantastic
+      journey of quest can start over again.
     </div>
     <div v-if="hoverSignwebImage" class="green-text lightgray-text">
       <h2 class="title">Signweb</h2>
@@ -186,6 +246,25 @@ onMounted(() => {
       the video itself, or the movements from the speaker which can be useful in researching ASL.<br><br>
       This was a significant collaborative project organized by LUDev. Our team of six worked together to upgrade a sign
       language resource database. I focused primarily on the front-end design and development.
+    </div>
+    <div v-if="hoverCoconutImage" class="green-text">
+      <h2 class="title">Enhancing Live Performances:
+        A Co-Creative VJing System Using Generative AI and Real-Time Inputs
+      </h2>
+      <p class="thin"><span class="bold">#</span>Research <span class="bold">#</span>Course: Computational Creativity
+      </p>
+      <p class="thin">[2024 December, with Carita, Nate & Sanne]</p>
+      Recent advancements in AI have created the oppor- tunity to develop co-creative computational systems, where
+      humans and AI can collaborate to create novel artistic output. These developments have potential in various
+      domains in the creative industry, including live performances. As such, VJs and DJs, who require vi- suals to
+      respond live to performance cues, could po- tentially benefit from co-creative systems that enable them to create
+      visuals during live performances. This paper presents a new co-creative VJing system that allows VJs or DJs to
+      collaborate with AI to generate visuals that respond to camera input with the help of
+      StreamDiffusion and TouchDesigner. <br><br>The evaluation demonstrated that the system generates visuals
+      with high novelty and enhances creativity, offering new possibilities for tradi- tional VJ workflows. Despite
+      challenges such as frame rate limitations, prompt dependency, and hardware re- quirements, participants found the
+      system to be both a creative partner and a tool, with future improvements like enhanced user control interfaces
+      promising greater practicality for live performances.
     </div>
     <div v-if="hoverDataImage" class="green-text">
       <h2 class="title">The ethical challenge of using healthcare data for patients with mental health issues</h2>
@@ -221,15 +300,28 @@ onMounted(() => {
       </h2>
       <p class="thin"><span class="bold">#</span>Research <span class="bold">#</span>Thesis</p>
       <p class="thin">[2025 July]</p>
-      According to linguistic relativity, the language we use can shape how we see the world (Whorf, 1957). This study
-      explores whether changing the radicals (the building blocks of Chinese characters) can affect how people see
-      themselves.<br><br>
-      For Chinese words that have negative meanings and include the “女” (meaning: female) radical, we applied two
-      changes: replacing them with synonyms that don’t contain the female radical (M1), and replacing the female radical
-      with a more neutral one (M2). For positive words that originally don’t include the “女” (female) radical, we added
-      it in (M3). Participants were asked to rate sentences that described personal traits, some with the original
-      characters, the rest with modified versions, and indicate how well each sentence matched the way they perceive
-      themselves.
+      This study explores whether changing gendered radicals in Chinese character can influence how people see
+      themselves. Synonym replacement (M1) based on word unit and Radical neutralization based character unit (M2) are
+      the modifications for originally negative expressions. Adding female radical (M3) is how originally positive
+      expressions are modified. The study tested how participant evaluate themselves differently under modified and
+      original forms. <br><br>Main findings include: 1) M1 increase negative self-evaluation; 2) the negative impact of
+      M1 is
+      significant among female participants, but not for other genders; 3) the impact of M2 and M3 varied depending on
+      the word’s meaning; 4) participants’ feminism level cannot predict their response to language intervention.
+      In general, the modifications do not have a consistent positive impact on self-perception. This result may be
+      because 1) the questionnaire feels like a neutral and task-based setting and does not invite strong emotional
+      reaction; 2) participant can make sense out of the modified characters because of human’s embedded comprehension
+      mechanism, and interpret them based on their original form; 3) there is a gap between what people believe and how
+      they feel in the moment. Even if someone identifies as a feminist, their reactions to words can happen quickly and
+      automatically based on what they are used to seeing or hearing.<br><br>
+      This is the first study to bring feminist language reform and digital tool design together into the Chinese
+      context. It is hoped that the result of this study can provides a unique perspective of how feminist ideas can
+      affect people’s self-perception, and to show how technology can help spread these ideas. The created input method
+      can also serves as a tool for future researchers or developers who believe in feminism, tech for good, or
+      inclusive language can build on. In doing so, it hopes to make feminist language more visible and more usable in
+      digital spaces.<br><br>
+      The study also triggers a creative output, which is a user-friendly feminist Chinese input method that provides
+      various typing options including original characters and modified characters.
     </div>
     <!-- 当没有悬停时显示占位符，保持布局稳定 -->
     <div v-if="!hoverFirstImage && !hoverSecondImage" class="placeholder-text">
@@ -285,6 +377,13 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container">
+          <a href="/How-well-can-fingers-remember.pdf" target="_blank">
+            <img src="/fingerPaper.png" class="logo gray" alt="Vue logo"
+              @mouseenter="hoverFingerPaperImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverFingerPaperImage = false; isBackgroundGrayscale = false" />
+          </a>
+        </div>
+        <div class="image-container">
           <a href="https://github.com/enenmia/fakeLinkedIn" target="_blank">
             <img src="/finger.png" class="logo" alt="Vite logo"
               @mouseenter="hoverFingerImage = true; isBackgroundGrayscale = true"
@@ -313,6 +412,13 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container">
+          <a href="/CC__cocunut.pdf" target="_blank">
+            <img src="/coconut.png" class="logo gray" alt="Vue logo"
+              @mouseenter="hoverCoconutImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverCoconutImage = false; isBackgroundGrayscale = false" />
+          </a>
+        </div>
+        <div class="image-container">
           <a href="/Final%20paper-The%20ethical%20challenge%20of%20using%20healthcare%20data%20for%20patients%20with%20mental%20health%20issues.pdf"
             target="_blank" rel="noopener noreferrer">
             <img src="/data.png" class="logo gray" alt="Vue logo"
@@ -330,18 +436,19 @@ onMounted(() => {
         </div>
         <div class="image-container">
           <a href="/Placeholder.pdf" target="_blank">
-            <img src="/e-keyboard.png" class="logo" alt="Vue logo"
-              @mouseenter="hoverEkeyboardImage = true; isBackgroundGrayscale = true"
-              @mouseleave="hoverEkeyboardImage = false; isBackgroundGrayscale = false" />
-          </a>
-        </div>
-        <div class="image-container">
-          <a href="/Placeholder.pdf" target="_blank">
             <img src="/thesis.png" class="logo gray" alt="Vue logo"
               @mouseenter="hoverThesisImage = true; isBackgroundGrayscale = true"
               @mouseleave="hoverThesisImage = false; isBackgroundGrayscale = false" />
           </a>
         </div>
+        <div class="image-container">
+          <a href="/Placeholder.pdf" target="_blank">
+            <img src="/e-keyboard.png" class="logo" alt="Vue logo"
+              @mouseenter="hoverEkeyboardImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverEkeyboardImage = false; isBackgroundGrayscale = false" />
+          </a>
+        </div>
+
       </div>
 
     </div>
@@ -397,7 +504,7 @@ onMounted(() => {
 
 /* 基础文字样式 */
 .green-text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   margin: 0 auto;
   /* 移除上下边距，因为容器已有内边距 */
@@ -460,7 +567,7 @@ onMounted(() => {
 
 
 .placeholder-text {
-  height: 14px;
+  height: 12px;
   /* 与文字高度一致 */
 }
 
@@ -491,6 +598,11 @@ onMounted(() => {
   font-family: "Asset", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.not-italic {
+  font-style: normal;
+  /* 确保不使用斜体 */
 }
 
 .background {
