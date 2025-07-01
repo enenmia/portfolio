@@ -14,16 +14,16 @@
             <i class="pi pi-map-marker"></i>
             <p>Guangzhou & Amsterdam</p>
           </div>
-          <a href="https://www.linkedin.com/in/huien-tan/" class="flex" target="_blank">
-            <i class="pi pi-linkedin"></i>
+          <a href="https://www.linkedin.com/in/huien-tan/" style="color:#3e7a8c" class="flex" target="_blank">
+            <i class="pi pi-linkedin" style="color:#3e7a8c"></i>
             <p>LinkedIn</p>
           </a>
-          <a href="https://github.com/enenmia" class="flex" target="_blank">
-            <i class="pi pi-github"></i>
+          <a href="https://github.com/enenmia" style="color:#3e7a8c" class="flex" target="_blank">
+            <i class="pi pi-github" style="color:#3e7a8c"></i>
             <p>Github</p>
           </a>
-          <a href="https://www.instagram.com/hui__en__?igsh=Yjd3Z3RvejY0djB0" class="flex" target="_blank">
-            <i class="pi pi-instagram"></i>
+          <a href="https://www.instagram.com/hui__en__?igsh=Yjd3Z3RvejY0djB0" class="flex" style="color:#3e7a8c" target="_blank">
+            <i class="pi pi-instagram" style="color:#3e7a8c"></i>
             <p>Instagram</p>
           </a>
         </div>
