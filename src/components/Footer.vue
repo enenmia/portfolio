@@ -22,6 +22,10 @@
             <i class="pi pi-github"></i>
             <p>Github</p>
           </a>
+          <a href="https://www.instagram.com/hui__en__?igsh=Yjd3Z3RvejY0djB0" class="flex" target="_blank">
+            <i class="pi pi-instagram"></i>
+            <p>Instagram</p>
+          </a>
         </div>
 
         <!-- <p class="typing">Be playful.</p> -->

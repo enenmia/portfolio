@@ -6,9 +6,9 @@
                 <h2 class="name">Huien</h2>
                 <div class="bio-tooltip" v-show="showBio">
                     <p>I am a software developer working in creative field. With a passion for language, arts and tech
-                        for good, I have worked with various projects stretching their limits. I have currently graduated
+                        for good, I have worked with various projects stretching their limits. I am graduating
                         from Leiden University, MSc in Creative Intelligence and Technology (Old name: Media
-                        Technology). <a href="/CV.pdf" class="cv-link">Check my CV here</a>.</p>
+                        Technology). Feel free to contact me if you also want to do fun projects about language, coding and aesthetics.<a href="/CV.pdf" class="cv-link">Check my CV here</a>.</p>
                 </div>
             </div>
         </div>

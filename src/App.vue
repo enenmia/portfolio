@@ -61,17 +61,12 @@ onMounted(() => {
         Interaction & Information Visualisation</p>
       <p class="thin">[2023 December]</p>
       Creating your own Chinese character can help you remember the way it actually looks!<br><br>
-      As the traditional methods (repeating and deconstructing) of character learning
-      both have unignorable drawbacks such as lack of fun or not intuitive enough, we
-      aim to improve the memorizing issue of character. Transitioning from rote character memorization to diverse
-      memorization strategies reveals another way out.<br><br>
-      This technique, common in recall, is rarely applied in character memorization.
-      The method is called integrate subjectivity into memorizing process[8]. To
-      specify the term, integrating subjectivity can be understood as finding personal
-      connections between language learners and the language. This technique suggests
-      that stressing the learner’s own ideas could add benefit to their learning journey.
-      With this in mind, we decide to integrate subjectivity in the learning process
-      with Symnese.<br><br>
+      The traditional way (repeating and deconstructing) of character learning
+      can be lack of fun. Also, although Chinese is logograph, it has evolved so much and become not intuitive enough
+      for learner to associate its original meaning to the way it looks now.
+      <br><br> Therefore, a new way of remembering characters is explored.It is called integrate subjectivity into
+      memorizing process[1]. This technique suggests
+      that stressing the learner’s own ideas could add benefit to their learning journey..<br><br>
       In order to provide a possible solution to this problem, Symnese, a webbased character learning tool, was created.
       It aimed to discover whether people
       can learn characters more efficiently when trying to figure out the symbolic
@@ -166,7 +161,7 @@ onMounted(() => {
       </h2>
       <p class="thin"><span class="bold">#</span>Research <span class="bold">#</span>Course: Playful & Creative Science
       </p>
-      <p class="thin">[2025 July, with Josie]</p>
+      <p class="thin">[2024 February, with Josie]</p>
       Repeatedly writing down things help us remember [1]. Knowing that from the
       research of previous scholars, we are still curious about how exactly different finger
       participate in this process. In other words, we have the research question:
@@ -202,7 +197,7 @@ onMounted(() => {
         <span class="bold">#</span>Course:
         Creative & Playful Science
       </p>
-      <p class="thin">[2024 May]</p>
+      <p class="thin">[2024 February]</p>
       A fake LinkedIn website to showcase the scientific results of finger's strength.
     </div>
     <div v-if="hoverSecondImage" class="green-text lightgray-text">
@@ -362,6 +357,20 @@ onMounted(() => {
           </a>
         </div>
         <div class="image-container">
+          <a href="/How-well-can-fingers-remember.pdf" target="_blank">
+            <img src="/fingerPaper.png" class="logo gray" alt="Vue logo"
+              @mouseenter="hoverFingerPaperImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverFingerPaperImage = false; isBackgroundGrayscale = false" />
+          </a>
+        </div>
+        <div class="image-container">
+          <a href="https://github.com/enenmia/fakeLinkedIn" target="_blank">
+            <img src="/finger.png" class="logo" alt="Vite logo"
+              @mouseenter="hoverFingerImage = true; isBackgroundGrayscale = true"
+              @mouseleave="hoverFingerImage = false; isBackgroundGrayscale = false" />
+          </a>
+        </div>
+        <div class="image-container">
           <a href="https://sites.google.com/view/artificialcreatures2024/student-portfolios/carita-muhli/final-project-toxicity?authuser=0"
             target="_blank">
             <img src="/image.png" class="logo vue" alt="Vite logo"
@@ -376,20 +385,7 @@ onMounted(() => {
               @mouseleave="hoverSSIImage = false; isBackgroundGrayscale = false" />
           </a>
         </div>
-        <div class="image-container">
-          <a href="/How-well-can-fingers-remember.pdf" target="_blank">
-            <img src="/fingerPaper.png" class="logo gray" alt="Vue logo"
-              @mouseenter="hoverFingerPaperImage = true; isBackgroundGrayscale = true"
-              @mouseleave="hoverFingerPaperImage = false; isBackgroundGrayscale = false" />
-          </a>
-        </div>
-        <div class="image-container">
-          <a href="https://github.com/enenmia/fakeLinkedIn" target="_blank">
-            <img src="/finger.png" class="logo" alt="Vite logo"
-              @mouseenter="hoverFingerImage = true; isBackgroundGrayscale = true"
-              @mouseleave="hoverFingerImage = false; isBackgroundGrayscale = false" />
-          </a>
-        </div>
+
         <div class="image-container">
           <a href="https://huiennn.itch.io/the-quest-of-truth" target="_blank">
             <img src="/quest.png" class="logo vite" alt="Vue logo"
@@ -579,7 +575,7 @@ onMounted(() => {
   position: relative;
   z-index: 1;
   flex-direction: column;
-  margin-top:-50px;
+  margin-top: -50px;
   /* padding: 4rem; */
 
 }
