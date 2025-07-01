@@ -65,7 +65,7 @@ onMounted(() => {
       can be lack of fun. Also, although Chinese is logograph, it has evolved so much and become not intuitive enough
       for learner to associate its original meaning to the way it looks now.
       <br><br> Therefore, a new way of remembering characters is explored.It is called integrate subjectivity into
-      memorizing process[1]. This technique suggests
+      memorizing process. This technique suggests
       that stressing the learner’s own ideas could add benefit to their learning journey..<br><br>
       In order to provide a possible solution to this problem, Symnese, a webbased character learning tool, was created.
       It aimed to discover whether people
