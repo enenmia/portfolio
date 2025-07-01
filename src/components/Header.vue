@@ -79,7 +79,7 @@ template {
     backdrop-filter: blur(10px);
     border-radius: 4px;
     padding: 0.5rem 0;
-    min-width: 150px;
+    min-width: 120px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(10px);
     opacity: 0;
