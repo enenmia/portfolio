@@ -555,7 +555,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 300px;
   width: 100%;
   padding: 1em;
   /* 添加内边距 */
@@ -579,6 +579,7 @@ onMounted(() => {
   position: relative;
   z-index: 1;
   flex-direction: column;
+  margin-top:-100px;
   /* padding: 4rem; */
 
 }
