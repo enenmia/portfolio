@@ -118,7 +118,7 @@ template {
     padding: 18px;
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); */
     z-index: 200;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.6;
     color: #333;
     text-align: left;

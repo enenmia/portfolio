@@ -555,7 +555,7 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 280px;
+  margin-top: 275px;
   width: 100%;
   padding: 1em;
   /* 添加内边距 */
