@@ -90,7 +90,7 @@ onMounted(() => {
 .folder-icon {
   height: 3.5em;
   /* 增大图标基础尺寸 */
-  padding: 1.5em;
+  padding: 1em;
   /* 调整内边距 */
   margin: 0 20px;
   /* 两个图标之间的间距 */
