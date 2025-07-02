@@ -52,11 +52,11 @@
 
 .footer-outer {
   position: relative;
-  height: 800px;
+  height: 750px;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -65,7 +65,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 800px;
+  height: 750px;
   width: 100%;
   background-color: #f8f4f4;
   /* 可自定义颜色或渐变 */

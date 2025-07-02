@@ -3,12 +3,12 @@
     <div class="header-container">
         <div class="header-content">
             <div class="name-container" @mouseover="showBio = true" @mouseleave="showBio = false">
-                <h2 class="name">Huien</h2>
+                <h2 class="name">Huien's Workspace</h2>
                 <div class="bio-tooltip" v-show="showBio">
                     <p>I am a software developer working in creative field. With a passion for language, arts and tech
                         for good, I have worked with various projects stretching their limits. I am graduating
                         from Leiden University, MSc in Creative Intelligence and Technology (Old name: Media
-                        Technology). Feel free to contact me if you also want to do fun projects about language, coding and aesthetics.<a href="/CV.pdf" class="cv-link">Check my CV here</a>.</p>
+                        Technology). Feel free to contact me if you also want to do fun projects about language, coding and aesthetics. <a href="/CV.pdf" class="cv-link">Check my CV here</a>.</p>
                 </div>
             </div>
         </div>
@@ -31,8 +31,8 @@ template {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.2);
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.7);
     /* Translucent white */
     backdrop-filter: blur(5px);
     /* Create frosted glass effect */
@@ -61,13 +61,13 @@ template {
     font-family: "Montserrat", sans-serif;
     color: #9eafab;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 0;
     transition: color 0.3s ease;
 }
 
 .name-container:hover .name {
-    color: white;
+    color: #c8dbd7;
 }
 
 .dropdown-menu {
@@ -109,7 +109,7 @@ template {
 .bio-tooltip {
     position: absolute;
     top: 120%;
-    left: 0;
+    left: 60%;
     transform: translateX(20px);
     width: 210px;
     background-color: rgba(255, 255, 255, 0.95);
