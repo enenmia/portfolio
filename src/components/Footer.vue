@@ -116,7 +116,7 @@
   }
 }
 </style>
-<script setup>
+<script setup lange="ts ">
 import { ref, onMounted } from 'vue'
 
 const isTypingActive = ref(false)

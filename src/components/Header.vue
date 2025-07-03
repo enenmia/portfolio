@@ -2,9 +2,9 @@
 <template>
     <div class="header-container">
         <div class="header-content">
-            <div class="name-container" @mouseover="showBio = true" @mouseleave="showBio = false">
+            <div class="name-container" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave">
                 <h2 class="name">Huien's Workspace</h2>
-                <div class="bio-tooltip" v-show="showBio">
+                <div class="bio-tooltip" v-show="showBio" @mouseover="handleMouseOver" @mouseleave="handleMouseLeave">
                     <p>I am a software developer working in creative field. With a passion for language, arts and tech
                         for good, I have worked with various projects stretching their limits. I am graduating
                         from Leiden University, MSc in Creative Intelligence and Technology (Old name: Media
@@ -19,6 +19,21 @@
 import { ref } from 'vue';
 
 const showBio = ref(false);
+let hideTimer = null;
+
+function handleMouseOver() {
+  if (hideTimer) {
+    clearTimeout(hideTimer);
+    hideTimer = null;
+  }
+  showBio.value = true;
+}
+
+function handleMouseLeave() {
+  hideTimer = setTimeout(() => {
+    showBio.value = false;
+  }, 200);
+}
 </script>
 
 <style scoped>
