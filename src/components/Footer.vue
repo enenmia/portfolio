@@ -58,12 +58,13 @@
   padding: 0;
   width: 100vw;
   overflow: hidden;
+  margin-right: -2vw;
 }
 
 .footer-inner {
   position: fixed;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   right: 0;
   height: 750px;
   width: 100%;
@@ -76,8 +77,8 @@
   /* 可自定义文字颜色 */
   font-size: 0.7rem;
   font-weight: 300;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 .footer-content {
