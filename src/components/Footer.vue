@@ -59,6 +59,7 @@
   width: 100vw;
   overflow: hidden;
   margin-right: -2vw;
+  margin-left:-2vw;
 }
 
 .footer-inner {
